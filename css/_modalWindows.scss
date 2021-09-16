@@ -1,0 +1,78 @@
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity .4s ease-in;
+    pointer-events: none;
+
+    &:target{
+        opacity:1;
+    pointer-events: auto;
+    }
+
+}
+
+.modalDialog{
+    div{
+
+        width: 50%;
+        position: relative;
+        margin: 10% auto;
+        padding: 1em;
+        border-radius: .7em;
+        background:$color-secondary;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            input{
+                margin-bottom: 1em;
+                border: 1px solid $color-nav-links;
+                border-radius: .3em;
+                padding: .5em;
+            }
+            label{
+                color: $color-nav-links;
+            }
+
+            button{
+                margin-left: 0;
+            }
+        }
+
+
+
+    }
+}
+
+
+
+.close {
+    background: #606061;
+    color: $color-secondary;
+    line-height: 1.56em;
+    position: absolute;
+    right: -0.75em; // 12/16
+    text-align: center;
+    top: -0.625em; // 10/16
+    width: 1.5em; //24/16
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.75em; //12/16
+    box-shadow: 1px 1px 3px #000;
+
+    &:hover{
+        background: $color-button;
+    }
+}
+
+.password-checker{
+    position: relative;
+    top: .4em;
+    color: red;
+}

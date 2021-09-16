@@ -1,0 +1,694 @@
+
+  .box,
+  .card,
+  .topic{
+      box-shadow: 1px 1px 10px lighten($color-header, 70%);
+  }
+
+ a{
+     transition: .4s all ease-out;
+     display: inline-block;
+     
+
+     &:hover,
+     &:focus{
+         transform: scale(1.2);
+     }
+ }
+
+
+//header
+
+
+
+
+.navbars{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.navigation{
+    
+    li:not(:first-child){
+        margin-left: .8em;
+    }
+    
+    li{
+        display: inline-block;
+        
+
+        a{
+            color: $color-nav-links;
+            text-transform: capitalize;
+        }
+        
+    }
+}
+
+.log-in{
+    li{
+        display: inline-block;
+        
+    }
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    .container{
+        display: flex;  
+    }
+}
+
+header{
+    .navbars{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        
+        
+    }
+    background-image: radial-gradient(circle at top left, lighten($color-header, 27%), $color-header);
+
+    .image-handler,
+    .headline-image{
+        @media (max-width: $size-m){
+            &{
+                display: none;
+            }
+        }
+    }
+    
+}
+
+.navbox{
+    display: flex;
+    align-items: baseline;
+
+    @media (max-width: $size-m){
+        &{
+            display: none;
+        }
+    }
+}
+
+.navbox-mobile{
+
+
+    display: none;
+
+    .svg-toggler{
+        background: transparent;
+    }
+
+    
+
+    @media (max-width: $size-m){
+        &{
+            display: inline-block;
+            position: relative;
+            top: 1em;
+            &:hover,
+            &:focus{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.mobile-menu{
+
+    display: none;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    li{
+        list-style-type: none;
+        margin-bottom: .6em;
+        margin-left: 0 !important;
+        
+
+        .btn-sign-up{
+            margin-left: 0;
+        }
+    }
+
+    
+}
+
+.logo-handler{
+    
+    span{
+        color: $color-nav-links;
+    }
+}
+
+.btn-sign-in,
+.btn-sign-up{
+    @extend %btnMedium;
+}
+
+.btn-sign-in{
+    background-color: transparent;
+    border: 1px solid $color-nav-links;
+    color: $color-nav-links;
+    
+}
+
+.btn-sign-up{
+    color: $color-secondary;
+    background-color: $color-button;
+    border: none;
+    margin-left: .7em;
+    
+}
+
+.primary-headline{
+
+    max-width: 50%;
+    margin-top: 2em;
+
+    h1{
+        color: $color-secondary;
+        font-size: 5em;
+        text-shadow: 1px 1px 1px $color-secondary;
+        
+    }
+
+    p{
+        color: $color-nav-links;
+        font-size: 2em;
+    }
+
+    @media (max-width: $size-xxl){
+        &{
+            font-size: 80%;
+        }
+    }
+
+    @media (max-width: $size-l){
+        &{
+            font-size: 70%;
+        }
+    }
+
+    @media (max-width: $size-m){
+        &{
+            max-width: 100%;
+        }
+    }
+
+}
+
+.headline-bar{
+    max-width: 150em;
+    display: inline-flex;
+    background-color: $color-secondary;
+    border-radius: 1.1em;
+    padding: .3em 2em ;
+    position: relative;
+    z-index: 10;
+    box-shadow: 1px 1px 4px black;
+
+    @media (max-width: $size-m){
+        &{
+            display: block;
+        }
+    }
+
+
+
+    .bag:not(:first-child){
+        margin-left: 3em;
+
+        @media (max-width: $size-m){
+            &{
+                margin-left: 0;
+            }
+        }
+    }
+
+}
+
+.bag{
+
+    @media (max-width: $size-m){
+        &{
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+    }
+
+    h3{
+        white-space: nowrap;
+        font-size: 1.7em;
+        color: darken($color-nav-links, 55%);
+    }
+}
+
+.bag{
+    span{
+        color: darken($color-nav-links, 40%);
+    }
+}
+
+.bag:last-child{
+    align-self: center;
+}
+
+.btn-headline{
+    @extend %btnLarge;
+    background-color: $color-button;
+    color: $color-secondary;
+    border: none;
+    margin-left: 2em;
+    &:hover,
+    &:focus{
+        color: $color-secondary;
+    }
+
+    @media (max-width: $size-m){
+        &{
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+
+
+.headline-image{
+    position: relative;
+    top:3em;
+    left:9.3em;
+    border-radius: 12em 0em 3em 4em;
+    
+}
+
+//article
+
+
+
+body{
+    background-color: $color-primary;
+    margin: 0 auto;
+    
+}
+
+.content{
+    overflow: hidden;
+}
+
+.pre-headline{
+    @extend %pre-headline;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    padding-top: 7em;
+    padding-bottom: 2em;
+    
+    h2{
+        @extend %h2;
+        text-align: center;
+        margin-top: .3em;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2em;
+
+    }
+
+
+}
+
+h3{
+    font-size: 2em;
+}
+
+#first{
+    @media (max-width: $size-m){
+        &{
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .box{
+        @media (max-width: $size-m){
+            &{
+                width: 100%;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+#second{
+    @media (max-width: $size-l){
+        &{
+            flex-direction: column;
+        }
+    }
+
+    .image-handler{
+        @media (max-width: $size-l){
+            &{
+                margin-top: 2em;
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+
+.box{
+    background-color: $color-secondary;
+    text-align: center;
+    border-radius: .5em;
+    padding: 1.5em 1em;
+    width: 30%;
+
+    
+
+    span{
+        display: block;
+        color: $color-nav-links;
+    }
+
+}
+
+.box-handler{
+
+    
+
+    span{
+        text-align: start;
+    }
+
+    h2{
+        text-align: start;
+        
+    }
+
+    h3{
+        text-align: start;
+    }
+
+    .pre-headline{
+        justify-content: start;
+    }
+
+
+
+    .box{
+        width: 85%;
+        padding-top: .1em;
+
+        @media (max-width: $size-l){
+            &{
+                width: 100%;
+            }
+        }
+    }
+    
+    .box:not(:last-child){
+        margin-bottom: 2em;
+    }
+    
+}
+
+.image-handler{
+
+    
+
+    .border{
+
+        max-width: 100%;
+        max-height: 100%;
+        border: 1px solid lighten($color-header, 30%);
+        
+        border-radius: 5em 0em 5em 0em;
+    }
+
+    img{
+        border-radius: 5em 0em 5em 0em;
+        box-shadow: 1px 1px 10px;
+        position: relative;
+        top: 1em;
+        left: 1em;
+        
+    }
+}
+
+aside{
+
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 2em;
+
+    h2{
+        @extend %h2;
+    }
+
+    .pre-headline{
+        justify-content: start;
+    }
+
+    .container{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+
+        @media (max-width: 1200px){
+            &{
+                flex-wrap: wrap;
+            }
+        }
+
+        
+    }
+}
+
+.card{
+    background-color:$color-secondary;
+    border-radius: .7em;
+    padding: 1em 1em 2em 1em;
+    width: 30%;
+
+    img{
+        border-radius: .5em;
+        max-width: 100%;
+    }
+
+    span{
+        display: block;
+        line-height: 1.5;
+    }
+
+    .price{
+        color: $color-button;
+    }
+
+    @media (max-width: 1200px){
+        &{
+            width: 100%;
+            margin-top: 1em;
+        }
+    }
+
+    
+}
+
+section{
+    h2{
+        @extend %h2;
+        text-align: center;
+    }
+
+}
+
+#map{
+    border-radius: 3em;
+}
+
+.topic{
+    width: 45%;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: .9em;
+    background-color: $color-secondary;
+
+    img{
+        border-radius: 50%;
+
+    }
+
+    h4{
+        margin: .7em;
+        
+    }
+
+    p{
+        line-height: 1.5;
+        margin: .5em;
+        color: $color-nav-links;
+    }
+}
+
+.topic-hider{
+    
+    display: none;
+
+    .topic-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+}
+
+
+.rating{
+    color: $color-stars;
+}
+
+#pre-footer{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;  
+    }
+    .btn-topic{
+        @extend %btnLarge;
+        border: 1px solid $color-nav-links;
+        background-color: transparent;
+        color: $color-nav-links;
+        text-transform: capitalize;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 2em;
+        &:hover,
+        &:focus{
+            color: $color-secondary;
+        }
+    }
+
+    .topic{
+        @media (max-width: 768px){
+            &{
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+footer{
+
+    background-color: $color-secondary;
+    padding-top: 2em;
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px){
+            &{
+                flex-wrap: wrap;
+            }
+        }
+
+    }
+
+    .box{
+
+        box-shadow: none;
+
+        p{
+            color: $color-nav-links;
+        }
+
+        li{
+            list-style-type: none;
+            margin-bottom: 1.5em;
+            
+        }
+
+        text-align: start;
+
+        a{
+            color: $color-nav-links;
+            white-space: nowrap;  
+        }
+
+        ul{
+            padding-left: 0;
+            
+        }
+
+        @media (max-width: 768px){
+            &{
+                width: 100%;
+                font-size: 2em;
+                text-align: center;
+                border-bottom: 1px solid $color-nav-links;
+            }
+        }
+
+    }
+}
+
+
+.contact-information{
+    @media (max-width: $size-l) {
+        
+        font-size: .6em;
+    }
+
+
+}
+
+.back-to-top{
+    color: $color-button;
+    position: fixed;
+    bottom: .3em;
+    right: .5em;
+    z-index: 15;
+    display: block;
+    opacity: .8;
+    font-size: 3em;
+
+        &:hover,
+        &:focus{
+            opacity: 1;
+            transition: .3s;
+        }
+
+        @media (max-width: $size-s){
+            &{
+                right: -.15em;
+            }
+        }
+}

@@ -1,0 +1,34 @@
+
+
+%btnMedium{
+    padding: .4em 1.5em;
+    border-radius: .6em;
+    text-transform: capitalize;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        background-color: lighten($color-button,23%);
+    }
+    
+}
+
+%btnLarge{
+    padding: 1.6em 2.5em;
+    border-radius: .8em;
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        background-color: lighten($color-button,5%);
+    }
+}
+
+%pre-headline{
+    color:$color-nav-links;
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+
+%h2{
+    font-size: 3em;
+    text-transform: capitalize; 
+}

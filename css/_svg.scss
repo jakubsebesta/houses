@@ -1,0 +1,72 @@
+#logo{
+    width: 2em;
+    height: 2em;
+    position: relative;
+    top: .5em;
+    background-color: transparent;
+
+}
+
+.svg-icon {
+    width: 2.4em;
+    height: 2.4em;
+    background-color: lighten($color-button,28%);
+    border-radius: 50%;
+    padding: .4em;
+    
+    
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: $color-button;
+  }
+  
+  .svg-icon circle {
+    stroke: $color-button;
+    stroke-width: 1;
+  }
+
+
+.svg-toggler {
+    width: 3em;
+    height: 3em;
+    background-color: lighten($color-button,28%);
+    border-radius: 50%;
+    padding: .4em;
+    
+    
+  }
+  
+  .svg-toggler path,
+  .svg-toggler polygon,
+  .svg-toggler rect {
+    fill: $color-button;
+  }
+  
+  .svg-toggler circle {
+    stroke: $color-button;
+    stroke-width: 1;
+  }
+
+  .footer-icon {
+    width: 1.5em;
+    height: 1.5em;
+    position: relative;
+    top: .4em;
+    
+    
+    
+  }
+  
+  .footer-icon path,
+  .footer-icon polygon,
+  .footer-icon rect {
+    fill: $color-button;
+  }
+  
+  .footer-icon circle {
+    stroke: $color-button;
+    stroke-width: 1;
+  }

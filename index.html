@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Luxury Houses</title>
+</head>
+<body>
+  <div class="content">
+    <header>
+        <div class="navbars">
+            <div class="logo-handler">
+                <svg class="svg-icon" id="logo" viewBox="0 0 20 20">
+                    <path fill="none" d="M15.971,7.708l-4.763-4.712c-0.644-0.644-1.769-0.642-2.41-0.002L3.99,7.755C3.98,7.764,3.972,7.773,3.962,7.783C3.511,8.179,3.253,8.74,3.253,9.338v6.07c0,1.146,0.932,2.078,2.078,2.078h9.338c1.146,0,2.078-0.932,2.078-2.078v-6.07c0-0.529-0.205-1.037-0.57-1.421C16.129,7.83,16.058,7.758,15.971,7.708z M15.68,15.408c0,0.559-0.453,1.012-1.011,1.012h-4.318c0.04-0.076,0.096-0.143,0.096-0.232v-3.311c0-0.295-0.239-0.533-0.533-0.533c-0.295,0-0.534,0.238-0.534,0.533v3.311c0,0.09,0.057,0.156,0.096,0.232H5.331c-0.557,0-1.01-0.453-1.01-1.012v-6.07c0-0.305,0.141-0.591,0.386-0.787c0.039-0.03,0.073-0.066,0.1-0.104L9.55,3.75c0.242-0.239,0.665-0.24,0.906,0.002l4.786,4.735c0.024,0.033,0.053,0.063,0.084,0.09c0.228,0.196,0.354,0.466,0.354,0.76V15.408z"></path>
+                </svg>
+                <span>Houses</span>
+            </div>
+                 <div class="navbox">
+                    <nav class="navbar">
+                        <ul class="navigation">
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about us</a></li>
+                            <li><a href="#our">our service</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="log-in">
+                        <li><a class="btn-sign-in" href="#openModal">sign in</a></li>
+                        <li><a class="btn-sign-up" href="#openModal2">sign up</a></li>
+                    </ul>
+                </div>
+                <div class="navbox-mobile">
+                    
+                    <a id="hamburger-icon">
+                        <svg class="svg-toggler" viewBox="0 0 20 20">
+                            <path d="M10,1.445c-4.726,0-8.555,3.829-8.555,8.555c0,4.725,3.829,8.555,8.555,8.555c4.725,0,8.555-3.83,8.555-8.555C18.555,5.274,14.725,1.445,10,1.445 M10,17.654c-4.221,0-7.654-3.434-7.654-7.654c0-4.221,3.433-7.654,7.654-7.654c4.222,0,7.654,3.433,7.654,7.654C17.654,14.221,14.222,17.654,10,17.654 M14.39,10c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,9.55,14.39,9.752,14.39,10 M14.39,12.702c0,0.247-0.203,0.449-0.45,0.449H6.06c-0.248,0-0.45-0.202-0.45-0.449c0-0.248,0.203-0.451,0.45-0.451h7.879C14.187,12.251,14.39,12.454,14.39,12.702 M14.39,7.298c0,0.248-0.203,0.45-0.45,0.45H6.06c-0.248,0-0.45-0.203-0.45-0.45s0.203-0.45,0.45-0.45h7.879C14.187,6.848,14.39,7.051,14.39,7.298"></path>
+                        </svg>
+                    </a> 
+                </div>  
+                
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="navigation">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#our">our service</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <ul class="log-in">
+                <li><a class="btn-sign-in" href="#openModal">sign in</a></li>
+                <li><a class="btn-sign-up" href="#openModal2">sign up</a></li>
+            </ul>
+            
+        </div>  
+                    <div class="container">
+                        
+                            <div class="primary-headline">
+                                <form action="">
+                                    <h1 id="home" class="fadeIn">
+                                        Let’s find your dream home!
+                                    </h1>
+                                    <p class="fadeInLeft">We are real state agency that will help you to find dream home, let’s discuss for a dream house.
+                                    </p>
+                                    <div class="headline-bar fadeInBottom">
+                                        <div class="bag">
+                                            <h3>Location</h3>
+                                            <select name="Location" id="lc">
+                                                <option value="1">Wien</option>
+                                                <option value="2">Bratislava</option>
+                                                <option value="3">Bern</option>
+                                                <option value="4">Prague</option>
+                                                <option value="5">Brno</option>
+                                                <option value="6">Berlin</option>
+                                                <option value="7">London</option>
+                                                <option value="8">Krakow</option>
+                                            </select>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>Property type</h3>
+                                            <select name="Property type" id="pt">
+                                                <option value="1">Classic</option>
+                                                <option value="2">Modern</option>
+                                            </select>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>Average price</h3>
+                                            <select name="price" id="pr">
+                                                <option value="1">less than 50 000€</option>
+                                                <option value="2">100 000€</option>
+                                                <option value="3">150 000€</option>
+                                                <option value="4">200 000€</option>
+                                                <option value="5">250 000€</option>
+                                                <option value="6">300 000€</option>
+                                                <option value="7">400 000€</option>
+                                                <option value="8">more than 500 000€</option>
+                                            </select>
+                                        </div>
+                                        <div class="bag">
+                                            <button class="btn-headline">Search</button>
+                                        </div>
+                                </form>
+                                </div>
+                            </div>
+                            <div class=".image-handler fadeInRight">
+                                <img class="headline-image" src="img/skyscraper.jpg" alt="skyscraper">
+                            </div>
+                            
+                    </div>        
+    </header>
+
+    <article>
+        <span class="pre-headline">why choose us</span>
+        <h2 id="about">We serve professionally</h2>
+        <div class="container" id="first">
+            <div class="box">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z"></path>
+                </svg>
+                <h3>Suitable for family</h3>
+                <span>The house we provide is </span>
+                <span>very suitable for families.</span>
+            </div>
+            <div class="box">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path d="M17.308,7.564h-1.993c0-2.929-2.385-5.314-5.314-5.314S4.686,4.635,4.686,7.564H2.693c-0.244,0-0.443,0.2-0.443,0.443v9.3c0,0.243,0.199,0.442,0.443,0.442h14.615c0.243,0,0.442-0.199,0.442-0.442v-9.3C17.75,7.764,17.551,7.564,17.308,7.564 M10,3.136c2.442,0,4.43,1.986,4.43,4.428H5.571C5.571,5.122,7.558,3.136,10,3.136 M16.865,16.864H3.136V8.45h13.729V16.864z M10,10.664c-0.854,0-1.55,0.696-1.55,1.551c0,0.699,0.467,1.292,1.107,1.485v0.95c0,0.243,0.2,0.442,0.443,0.442s0.443-0.199,0.443-0.442V13.7c0.64-0.193,1.106-0.786,1.106-1.485C11.55,11.36,10.854,10.664,10,10.664 M10,12.878c-0.366,0-0.664-0.298-0.664-0.663c0-0.366,0.298-0.665,0.664-0.665c0.365,0,0.664,0.299,0.664,0.665C10.664,12.58,10.365,12.878,10,12.878"></path>
+                </svg>
+                <h3>Trusted & secure</h3>
+                <span>We sell houses by maintaining</span>
+                <span>client confidentally.</span>
+            </div>
+            <div class="box">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path d="M17.927,5.828h-4.41l-1.929-1.961c-0.078-0.079-0.186-0.125-0.297-0.125H4.159c-0.229,0-0.417,0.188-0.417,0.417v1.669H2.073c-0.229,0-0.417,0.188-0.417,0.417v9.596c0,0.229,0.188,0.417,0.417,0.417h15.854c0.229,0,0.417-0.188,0.417-0.417V6.245C18.344,6.016,18.156,5.828,17.927,5.828 M4.577,4.577h6.539l1.231,1.251h-7.77V4.577z M17.51,15.424H2.491V6.663H17.51V15.424z"></path>
+                </svg>
+                <h3>Easy payment</h3>
+                <span>We make payments easy for you</span>
+                <span>to enjoy your new home</span>
+            </div>
+        </div>
+        <div class="container" id="second">
+            <div class="box-handler">
+                <span class="pre-headline">How it works</span>
+                <h2>Our unique proccess ready to help you get home</h2>
+                <div class="box">
+                    <h3>Chose your type</h3>
+                    <span>Before you buy a house make sure you choose</span>
+                    <span>what type you want</span>
+                </div>
+                <div class="box">
+                    <h3>See the property</h3>
+                    <span>After you choose the type you want, the you</span>
+                    <span>see the property you want</span>
+                </div>
+                <div class="box">
+                    <h3>Pay for your property</h3>
+                    <span>You only need to make a payment if you have</span>
+                    <span>chosen the property you want</span>
+                </div>
+            </div> 
+            <div class="image-handler">
+                <div class="border">
+                    <img src="img/skyscraper_melbourne.jpg" alt="skyscraper in melbourne">
+                </div>
+            </div> 
+        </div>      
+    </article>
+
+    <aside>
+        <span class="pre-headline">Special featured for you</span>
+        <h2 id="our">Best property deals</h2>
+        <div class="container">
+            <div class="card">
+                <img src="img/v1.jpg" alt="villa one">
+                <h4>House of abstract</h4>
+                <span>Bogar, Indonesia</span>
+                <span class="price">780€/month</span>
+            </div>
+
+            <div class="card">
+                <img src="img/v2.jpg" alt="villa one">
+                <h4>House of cloud</h4>
+                <span>Wellington, New Zealand</span>
+                <span class="price">780€/month</span>
+            </div>
+
+            <div class="card">
+                <img src="img/v3.jpg" alt="villa one">
+                <h4>House of sun</h4>
+                <span>Australia, Newcastle</span>
+                <span class="price">780€/month</span>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+            <h2>our company headquarters</h2>
+            <div class="container">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84317.91984732593!2d17.294599805230174!3d48.668485920651875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476cb4e2e7ed1a27%3A0x400f7d1c696ee40!2s905%2001%20Senica!5e0!3m2!1ssk!2ssk!4v1631017425958!5m2!1ssk!2ssk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="pre-footer">
+        <span class="pre-headline">Lorem ipsum</span>
+        <h2>Our customers said</h2>
+            <div class="container">
+                <div class="topic">
+                    <img src="img/avatar_1.jpg" alt="profile photo">
+                    <h4>Baratus Lensar</h4>
+                    <div class="rating">★★★★☆</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nesciunt. Fuga, velit. </p>
+                </div>
+                <div class="topic">
+                    <img src="img/avatar_2.jpg" alt="profile photo">
+                    <h4>Einar Selvik</h4>
+                    <div class="rating">★★★★★</div>
+                    <p>Jeg er ekstremt fornøyd med selskapet. Jeg kan anbefale dem til alle!
+                        Jeg kjøpte et vakkert hus i Norge i nærheten av Oslo.</p>
+                </div>
+                <div class="topic-hider">
+                    <div class="topic-container">
+                        <div class="topic">
+                            <img src="img/avatar_3.jpg" alt="profile photo">
+                            <h4>Jeremy Clarkson</h4>
+                            <div class="rating">☆☆☆☆☆</div>
+                            <p>Some say that he appears on high value stamps in Sweden, and that he can catch fish with his tongue. All we know is he’s called the Stig. </p>
+                        </div>
+                        <div class="topic">
+                            <img src="img/avatar_4.jpg" alt="profile photo">
+                            <h4>Steve Jobs</h4>
+                            <div class="rating">★★★☆☆</div>
+                            <p>Your time is limited, so don’t waste it living someone else’s life. </p>
+                        </div>
+                        <div class="topic">
+                            <img src="img/avatar_5.jpg" alt="profile photo">
+                            <h4>Elon Musk</h4>
+                            <div class="rating">★★★★☆</div>
+                            <p>When something is important enough, you do it even if the odds are not in your favor. </p>
+                        </div>
+                    </div>    
+              </div>  
+            </div> 
+            <button class="btn-topic">show more</button>   
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum aspernatur maiores beatae est cumque!</p>
+                <span class="contact-information"><a href="mailto:jakub.sebesta7@icloud.com"><svg class="footer-icon" viewBox="0 0 20 20">
+                    <path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+                </svg> jakub.sebesta7@icloud.com</a></span>
+                <span class="contact-information">
+                <a href="tel: +421917063030"><svg class="footer-icon" viewBox="0 0 20 20">
+                    <path d="M13.372,1.781H6.628c-0.696,0-1.265,0.569-1.265,1.265v13.91c0,0.695,0.569,1.265,1.265,1.265h6.744c0.695,0,1.265-0.569,1.265-1.265V3.045C14.637,2.35,14.067,1.781,13.372,1.781 M13.794,16.955c0,0.228-0.194,0.421-0.422,0.421H6.628c-0.228,0-0.421-0.193-0.421-0.421v-0.843h7.587V16.955z M13.794,15.269H6.207V4.731h7.587V15.269z M13.794,3.888H6.207V3.045c0-0.228,0.194-0.421,0.421-0.421h6.744c0.228,0,0.422,0.194,0.422,0.421V3.888z"></path>
+                </svg> +421 917 093 030</a></span>
+            </div>
+            <div class="box">
+                <ul>
+                    <h4>Our service</h4>
+                    <li><a href="">Buy house</a></li>
+                    <li><a href="">Sell house</a></li>
+                    <li><a href="">Rent house</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <h4>Support</h4>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <h4>Social media</h4>
+                    <li><a href="">youtube</a></li>
+                    <li><a href="">instagram</a></li>
+                    <li><a href="">twitter</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+
+<div id="openModal" class="modalDialog">
+        <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h4>Sign In</h4>
+                <form action="">
+                    <input type="text" placeholder="name" required>
+                    <input type="password" placeholder="password" required>
+                    <label><input type="checkbox" checked> Remember me!</label>
+                    
+                    <button class="btn-sign-in" type="submit">sign in</button>
+                    
+                </form>
+                
+        </div>
+</div>
+
+<div id="openModal2" class="modalDialog">
+    <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h4>Sign Up</h4>
+            <form id="password">
+                <input type="text" placeholder="meno" required>
+                <input type="email" placeholder="@" required>
+                <input type="password" placeholder="password" id="heslo" required>
+                <input type="password" placeholder="confirm password" id="overenie" required>
+                
+                
+                <button class="btn-sign-up" type="submit">sign up</button>
+                
+            </form>
+            
+            <span class="password-checker"></span>
+    </div>
+
+</div>
+    
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+ </div>  
+</body>
+</html>
