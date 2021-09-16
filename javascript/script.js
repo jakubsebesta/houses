@@ -1,3 +1,5 @@
+(function($){
+
 // Toggle menu
 
 var mobileMenu = $('.mobile-menu'),
@@ -132,3 +134,5 @@ function checkViewPort() {
 
 $(window).on('scroll resize', checkViewPort);
 $(window).trigger('scroll');
+
+})(jQuery);
