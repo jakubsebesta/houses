@@ -231,6 +231,12 @@ header .navbars {
   }
 }
 
+@media (min-width: 900px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
 .navbox-mobile {
   display: none;
 }

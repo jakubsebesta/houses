@@ -95,6 +95,14 @@ header{
     }
 }
 
+.mobile-container{
+
+    @media(min-width: $size-m){
+
+        display: none;
+    }
+}
+
 .navbox-mobile{
 
 
